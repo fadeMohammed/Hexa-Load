@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    animation-timing-function: linear;
+}
+main {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.a {
+    width: 130;
+    height: 20px;
+    background: #007bd8;
+    position: absolute;
+    top: 200px;
+    left: 190px;
+    animation-name: a;
+    animation-duration: 300ms;
+}
+@keyframes a {
+    0% {
+        width: 0px;
+    }
+}
+.b {
+    width: 70;
+    height: 40px;
+    background: #007bd8;
+    position: absolute;
+    top: 190px;
+    left: 220px;
+    animation-name: b;
+    animation-delay: 100ms;
+    animation-duration: 200ms;
+    animation-fill-mode: both;
+}
+@keyframes b {
+    0% {
+        width: 0px;
+    }
+}
+div.b::after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: -40px;
+    border: 20px solid;
+    border-color: transparent #007bd8 transparent transparent;
+    position: absolute;
+    animation-name: b-b;
+    animation-duration: 200ms;
+    animation-delay: 3000ms;
+    animation-fill-mode: both;
+}
+div.b::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 70px;
+    border: 20px solid;
+    border-color: transparent transparent transparent #007bd8;
+    position: absolute;
+    animation-name: b-b;
+    animation-duration: 200ms;
+    animation-delay: 3000ms;
+    animation-fill-mode: both;
+}
+@keyframes b-b {
+    0% {
+        opacity: 0%;
+        left: 0px;
+    }
+}
+.c {
+    width: 20px;
+    height: 0;
+    background: #007bd8;
+    top: 200px;
+    left: 320px;
+    position: absolute;
+    animation-name: c;
+    animation-duration: 300ms;
+    animation-delay: 400ms;
+    animation-fill-mode: both;
+}
+@keyframes c {
+    100% {
+        height: 140px;
+    }
+}
+.d {
+    width: 0;
+    height: 20px;
+    background: #007bd8;
+    top: 340px;
+    left: 320px;
+    position: absolute;
+    animation-name: d;
+    animation-duration: 500ms;
+    animation-delay: 700ms;
+    animation-fill-mode: both;
+}
+@keyframes d {
+    100% {
+        width: 270px;
+    }
+}
+.e {
+    width: 60px;
+    height: 20px;
+    background: #007bd8;
+    top: 360px;
+    left: 380px;
+    position: absolute;
+    animation-name: e;
+    animation-duration: 200ms;
+    animation-delay: 1200ms;
+    animation-fill-mode: both;
+}
+@keyframes e {
+    0% {
+        width: 0px;
+    }
+}
+.e::after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 60px;
+    top: -20px;
+    border: 20px solid;
+    border-color: transparent transparent transparent #007bd8;
+    position: absolute;
+    animation-name: e-b;
+    animation-duration: 200ms;
+    animation-delay: 3000ms;
+    animation-fill-mode: both;
+}
+.e::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: -40px;
+    top: -20px;
+    border: 20px solid;
+    border-color: transparent #007bd8 transparent transparent;
+    position: absolute;
+    animation-name: e-b;
+    animation-duration: 200ms;
+    animation-delay: 3000ms;
+    animation-fill-mode: both;
+}
+@keyframes e-b {
+    0% {
+        opacity: 0%;
+        left: 0px;
+    }
+}
+.f {
+    width: 60px;
+    height: 20px;
+    background: #007bd8;
+    top: 360px;
+    left: 495px;
+    position: absolute;
+    animation-name: f;
+    animation-duration: 200ms;
+    animation-delay: 1400ms;
+    animation-fill-mode: both;
+}
+@keyframes f {
+    0% {
+        width: 0px;
+    }
+}
+.f::after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 60px;
+    top: -20px;
+    border: 20px solid;
+    border-color: transparent transparent transparent #007bd8;
+    position: absolute;
+    animation-name: f-b;
+    animation-duration: 200ms;
+    animation-delay: 3000ms;
+    animation-fill-mode: both;
+}
+.f::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: -40px;
+    top: -20px;
+    border: 20px solid;
+    border-color: transparent #007bd8 transparent transparent;
+    position: absolute;
+    animation-name: f-b;
+    animation-duration: 200ms;
+    animation-delay: 3000ms;
+    animation-fill-mode: both;
+}
+@keyframes f-b {
+    0% {
+        opacity: 0%;
+        left: 0px;
+    }
+}
+.g {
+    width: 30px;
+    height: 90px;
+    background: #007bd8;
+    top: 170px;
+    left: 380px;
+    position: absolute;
+    animation-name: g;
+    animation-duration: 200ms;
+    animation-delay: 1800ms;
+    animation-fill-mode: both;
+}
+@keyframes g {
+    0% {
+        height: 0px;
+    }
+}
+.g::after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: -30px;
+    top: -30px;
+    border: 30px solid;
+    border-color: transparent #007bd8 transparent transparent;
+    position: absolute;
+    animation-name: g-b;
+    animation-duration: 300ms;
+    animation-delay: 3300ms;
+    animation-fill-mode: both;
+}
+.g::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: -30px;
+    top: 60px;
+    border: 30px solid;
+    border-color: transparent #007bd8 transparent transparent;
+    position: absolute;
+    animation-name: g-b;
+    animation-duration: 300ms;
+    animation-delay: 3300ms;
+    animation-fill-mode: both;
+}
+@keyframes g-b {
+    0% {
+        opacity: 0%;
+        top: 0px;
+    }
+}
+.h {
+    width: 30px;
+    height: 90px;
+    background: #007bd8;
+    top: 170px;
+    left: 530px;
+    position: absolute;
+    animation-name: h;
+    animation-duration: 200ms;
+    animation-delay: 2400ms;
+    animation-fill-mode: both;
+}
+@keyframes h {
+    0% {
+        height: 0px;
+    }
+}
+.h::after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: -30px;
+    border: 30px solid;
+    border-color: transparent transparent transparent #007bd8;
+    position: absolute;
+    animation-name: g-b;
+    animation-duration: 300ms;
+    animation-delay: 3300ms;
+    animation-fill-mode: both;
+}
+.h::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 60px;
+    border: 30px solid;
+    border-color: transparent transparent transparent #007bd8;
+    position: absolute;
+    animation-name: g-b;
+    animation-duration: 300ms;
+    animation-delay: 3300ms;
+    animation-fill-mode: both;
+}
+.i {
+    width: 30px;
+    height: 70px;
+    background: #ff4d4d;
+    top: 120px;
+    left: 455px;
+    position: absolute;
+    animation-name: i;
+    animation-duration: 200ms;
+    animation-delay: 2000ms;
+    animation-fill-mode: both;
+}
+@keyframes i {
+    0% {
+        height: 0px;
+    }
+}
+.i::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    top: -30px;
+    border: 15px solid;
+    border-color: transparent transparent #ff4d4d transparent;
+    position: absolute;
+    animation-name: g-b;
+    animation-duration: 300ms;
+    animation-delay: 3300ms;
+    animation-fill-mode: both;
+}
+.j {
+    width: 30px;
+    height: 70px;
+    background: #ff4d4d;
+    top: 240px;
+    left: 455px;
+    position: absolute;
+    animation-name: j;
+    animation-duration: 200ms;
+    animation-delay: 2200ms;
+    animation-fill-mode: both;
+}
+@keyframes j {
+    0% {
+        height: 0px;
+    }
+}
+.j::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 70px;
+    border: 15px solid;
+    border-color: #ff4d4d transparent transparent transparent;
+    position: absolute;
+    animation-name: g-b;
+    animation-duration: 300ms;
+    animation-delay: 3300ms;
+    animation-fill-mode: both;
+}
+.k {
+    width: 20px;
+    height: 20px;
+    top: 400px;
+    left: 385px;
+    border: 15px solid #007bd8;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: opacity;
+    animation-duration: 200ms;
+    animation-delay: 2600ms;
+    animation-fill-mode: both;
+}
+.l {
+    width: 20px;
+    height: 20px;
+    top: 400px;
+    left: 505px;
+    border: 15px solid #007bd8;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: opacity;
+    animation-duration: 200ms;
+    animation-delay: 2800ms;
+    animation-fill-mode: both;
+}
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+}
